@@ -14,9 +14,9 @@
     "fix": "eslint --fix --ext '.js' src test"
   },
   "dependencies": {
-    "@stoplight/spectral-formats": "^1.1.0",
-    "@stoplight/spectral-functions": "^1.6.1",
-    "@stoplight/spectral-rulesets": "^1.6.0",
+    "@stoplight/spectral-formats": "file:../../../../tools/spectral/packages/formats",
+    "@stoplight/spectral-functions": "file:../../../../tools/spectral/packages/functions",
+    "@stoplight/spectral-rulesets": "file:../../../../tools/spectral/packages/rulesets",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
@@ -31,8 +31,8 @@
     "coverageDirectory": "./coverage/",
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "nimma/legacy": "<rootDir>/../../node_modules/nimma/dist/legacy/cjs",
-      "nimma/fallbacks": "<rootDir>/../../node_modules/nimma/dist/cjs/fallbacks/"
+      "nimma/legacy": "<rootDir>/../../../../tools/spectral/node_modules/nimma/dist/legacy/cjs",
+      "nimma/fallbacks": "<rootDir>/../../../../tools/spectral/node_modules/nimma/dist/cjs/fallbacks"
     }
   }
 }
